@@ -1,8 +1,8 @@
 
-import { Button } from "../auth-components";
+import { Button } from "./button";
 import { auth } from "@/auth";
 
-import { signIn, signOut } from "next-auth/react";
+import { SignIn } from "../auth-components";
 
 export default async function UserButton() {
   const session = await auth();
@@ -17,6 +17,6 @@ export default async function UserButton() {
           </div>
   
   ) : (
-    <signIn />
+    <SignIn />
   );
 }
