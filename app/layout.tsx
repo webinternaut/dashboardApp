@@ -1,5 +1,6 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
 import '@/app/ui/global.css';
+import { SessionProvider } from 'next-auth/react';
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

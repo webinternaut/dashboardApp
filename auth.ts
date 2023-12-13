@@ -73,6 +73,9 @@ declare module "next-auth" {
 }
 
 export const authConfig = {
+  // pages: {
+  //   signIn: '/api/auth/signin',
+  // },
   debug: true,
   providers: [
     AzureADProvider({
@@ -108,7 +111,6 @@ export const authConfig = {
       },
     }),
   ],
-
-} satisfies NextAuthConfig;
+} satisfies NextAuthConfig
 
 export const { handlers, auth, signIn, signOut } = NextAuth(authConfig);

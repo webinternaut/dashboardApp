@@ -3,5 +3,5 @@ const nextConfig = {};
 
 module.exports = nextConfig;
 // module.exports = {
-//     basePath: '/dashboard',
+//     basePath: '/api/auth/signin',
 //   };

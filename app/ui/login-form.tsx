@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
+import { handlers } from "@/auth"
 
 export default function LoginForm() {
   // Destructure the 'data' property directly from the hook result
